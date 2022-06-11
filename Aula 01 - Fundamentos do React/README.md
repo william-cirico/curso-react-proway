@@ -35,8 +35,8 @@ utilizando localStorage.
 2) Construa uma página que contenha uma lista de produtos de acordo com a imagem abaixo:
 <img src="https://pt-br.reactjs.org/static/9381f09e609723a8bb6e4ba1a7713b46/90cbd/thinking-in-react-components.png" title="Lista de produtos">
 Os números da imagem correspondem aos seguintes componentes:
-    1. FilterableProductTable (laranja): contém a totalidade do exemplo
-    2. SearchBar (azul): recebe todo input do usuário
-    3. ProductTable (verde): exibe e filtra a coleção de dados baseado no input do usuário
-    4. ProductCategoryRow (turquesa): exibe um cabeçalho para cada categoria
-    5. ProductRow (vermelho): exibe uma linha para cada produto
+    1. FilterableProductTable (laranja): contém a totalidade do exemplo  
+    2. SearchBar (azul): recebe todo input do usuário  
+    3. ProductTable (verde): exibe e filtra a coleção de dados baseado no input do usuário  
+    4. ProductCategoryRow (turquesa): exibe um cabeçalho para cada categoria  
+    5. ProductRow (vermelho): exibe uma linha para cada produto  
