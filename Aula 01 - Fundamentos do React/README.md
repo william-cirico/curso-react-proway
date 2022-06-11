@@ -4,27 +4,27 @@ O objetivo dessa aula é entender o que é o React e aprender os principais fund
 dessa biblioteca.
 
 ## Assuntos que serão abordados nessa aula
-- [ ] O que é o React
-- [ ] O que é um SPA
-- [ ] O que é um PWA
-- [ ] Criação de um projeto React com TypeScript utilizando Create-React-App
-- [ ] Estrutura do projeto
-- [ ] JSX
-- [ ] O que são componentes
-  - [ ] Componentes de classe
-  - [ ] Componentes de função
-- [ ] Incorporando expressões no JSX
-- [ ] Adicionando CSS aos componentes
-  - [ ] CSS Module
-  - [ ] CSS-in-JS
-  - [ ] Inline
-- [ ] Props
-- [ ] Children
-- [ ] State
-- [ ] Manipulação de eventos
+- [ x ] O que é o React
+- [ x ] O que é um SPA
+- [ x ] O que é um PWA
+- [ x ] Criação de um projeto React com TypeScript utilizando Create-React-App
+- [ x ] Estrutura do projeto
+- [ x ] JSX
+- [ x ] O que são componentes
+  - [ x ] Componentes de classe
+  - [ x ] Componentes de função
+- [ x ] Incorporando expressões no JSX
+- [ x ] Adicionando CSS aos componentes
+  - [ x ] CSS Module
+  - [ x ] CSS-in-JS
+  - [ x ] Inline
+- [ x ] Props
+- [ x ] Children
+- [ x ] State
+- [ x ] Manipulação de eventos
 - [ ] Renderização condicional
-- [ ] Listas e Chaves
-- [ ] Componentes controlados
+- [ x ] Listas e Chaves
+- [ x ] Componentes controlados
 - [ ] Elevando o State
 
 ## Exercícios
