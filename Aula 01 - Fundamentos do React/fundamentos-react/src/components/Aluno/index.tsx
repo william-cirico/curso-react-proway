@@ -39,7 +39,7 @@ export function Aluno({ nome, notas }: IProps) {
     
     return (
         <>
-            <h3>Nome do aluno: {nome}</h3>
+            <h3 style={{ color: "red", backgroundColor: "black" }}>Nome do aluno: {nome}</h3>
             {
                 // Renderizando uma lista de elementos
                 notas.map((nota, indice) => <h4 key={indice}>Nota {indice + 1}: {nota.toFixed(2)}</h4>)
