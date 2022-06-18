@@ -6,6 +6,7 @@ utilizá-los dentro dos componentes.
 ## Assuntos que serão abordados nessa aula
 - [ ] useState
 - [ ] useEffect
+  - [ ] ciclo de vida do componente 
 - [ ] useRef
 - [ ] useContext
 - [ ] useReducer
