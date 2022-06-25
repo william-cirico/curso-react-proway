@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.todo-item__description {
+    flex: 1;
+    padding-left: 10px;
+}
