@@ -1,0 +1,20 @@
+.card {
+    color: black;
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    border-radius: 4px;  
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+    margin-bottom: 10px;
+}
+
+.title {
+    background-color: rgb(16, 16, 16);
+    color: rgb(230, 230, 230);
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.content {
+    padding: 10px;
+}

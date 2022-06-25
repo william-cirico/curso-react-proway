@@ -1,0 +1,14 @@
+.app__container {
+  min-height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.app__content {
+  background-image: url("./static/background-texture.png");
+  background-color: #fff;
+  padding: 10px;
+  overflow-y: auto;
+}
