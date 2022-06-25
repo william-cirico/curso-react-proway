@@ -10,7 +10,7 @@ type IProps = {
 }
 
 export function TodoItem(props: IProps) {
-    const { editTodo, deleteTodo, toggleTodo } = useContext(TodoContext)
+    const { dispatch } = useContext(TodoContext)
 
     const [editMode, setEditMode] = useState(false);
     const [text, setText] = useState(props.todo.description);
@@ -22,7 +22,7 @@ export function TodoItem(props: IProps) {
             description: text
         };
 
-        editTodo(updatedTodo);
+        dispatch({ type: "EDIT_TODO", payload: updatedTodo });
         setEditMode(false);
     }
 
@@ -34,7 +34,7 @@ export function TodoItem(props: IProps) {
 
     return (
         <div className={styles.container}>
-            <input type="checkbox" id="checkbox" checked={props.todo.completed} onChange={() => toggleTodo(props.todo.id)} />
+            <input type="checkbox" id="checkbox" checked={props.todo.completed} onChange={() => dispatch({ type: "TOGGLE_TODO", payload: props.todo.id })} />
             {
                 editMode ?
                     <>
@@ -48,7 +48,7 @@ export function TodoItem(props: IProps) {
                             {props.todo.description}
                         </label>
                         <Button color="blue" icon={faPenSquare} onClick={() => setEditMode(true)} />
-                        <Button color="red" icon={faTrashCan} onClick={() => deleteTodo(props.todo.id)} />
+                        <Button color="red" icon={faTrashCan} onClick={() => dispatch({ type: "DELETE_TODO", payload: props.todo.id })} />
                     </>
             }                        
         </div>

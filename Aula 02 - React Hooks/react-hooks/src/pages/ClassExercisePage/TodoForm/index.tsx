@@ -3,12 +3,12 @@ import { useTodo } from "../TodoContext";
 import styles from "./TodoForm.module.css";
 
 export function TodoForm() {
-    const { addTodo } = useTodo();
+    const { dispatch } = useTodo();
     const [text, setText] = useState("");
 
     function onSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-        addTodo(text);
+        dispatch({ type: "ADD_TODO", payload: text });
         setText("");
     }
 
