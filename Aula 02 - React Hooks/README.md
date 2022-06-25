@@ -4,12 +4,12 @@ O objetivo dessa aula é aprender o que são os hooks e como
 utilizá-los dentro dos componentes.
 
 ## Assuntos que serão abordados nessa aula
-- [ ] useState
-- [ ] useEffect
-  - [ ] ciclo de vida do componente 
-- [ ] useRef
-- [ ] useContext
-- [ ] useReducer
+- [x] useState
+- [x] useEffect
+  - [x] ciclo de vida do componente 
+- [x] useRef
+- [x] useContext
+- [x] useReducer
 - [ ] useCallback
 - [ ] useMemo
 - [ ] custom hooks
