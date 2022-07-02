@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+img {
+  max-width: 100%;
+}
