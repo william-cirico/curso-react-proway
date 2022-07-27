@@ -20,11 +20,11 @@ dessa biblioteca.
   - [x] Inline
 - [x] Props
 - [x] Children
-- [x] State
-- [x] Manipulação de eventos
+- [ ] State
+- [ ] Manipulação de eventos
 - [ ] Renderização condicional
 - [x] Listas e Chaves
-- [x] Componentes controlados
+- [ ] Componentes controlados
 - [ ] Elevando o State
 
 ## Exercícios
