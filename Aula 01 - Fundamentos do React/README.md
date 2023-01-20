@@ -20,12 +20,12 @@ dessa biblioteca.
   - [x] Inline
 - [x] Props
 - [x] Children
-- [ ] State
-- [ ] Manipulação de eventos
-- [ ] Renderização condicional
+- [x] State
+- [x] Manipulação de eventos
+- [x] Renderização condicional
 - [x] Listas e Chaves
-- [ ] Componentes controlados
-- [ ] Elevando o State
+- [x] Componentes controlados
+- [x] Elevando o State
 
 ## Exercícios
 1) Construa um página que permita sortear nomes digitados dentro de uma textarea. Cada nome deve ser digitado em uma linha diferente da
