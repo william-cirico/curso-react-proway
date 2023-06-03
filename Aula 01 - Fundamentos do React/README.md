@@ -235,6 +235,9 @@ Para realizar os exercícios crie um novo projeto em react utilizando Vite e Typ
   
 11) Crie um componente chamado "ItemList" que receba um array de itens como propriedade "items". Renderize uma lista dos itens, mas exiba a palavra "Esgotado" ao lado de cada item se ele estiver com estoque igual a zero.
 
+## Quiz
+https://forms.gle/Uhvf7vGibpWaMtmFA
+  
 ## Desafios
 
 ### Desafio 01
