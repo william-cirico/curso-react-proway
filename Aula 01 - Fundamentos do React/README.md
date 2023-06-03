@@ -25,7 +25,7 @@ dessa biblioteca.
 - [ ] Renderização condicional
 - [ ] Listas e Chaves
 - [ ] Componentes controlados
-- [ ] Elevando o State
+- [ ] Elevanção de Estado (state lifting)
 
 ## Conceitos
 
@@ -191,15 +191,49 @@ Dentro do retorno do componente, exibimos o valor atual do contador utilizando a
 Dessa forma, quando os botões são clicados, o estado "count" é atualizado e o componente é reexecutado, resultando na atualização do valor do contador na interface.
 
 O uso do state no React permite que os componentes mantenham informações dinâmicas e respondam a eventos ou interações do usuário. É uma maneira eficaz de criar componentes interativos e controlar o estado da aplicação em tempo real.
+  
+### Elevação de estado 
+ 
+Elevação de estado (state lifting) em React é um padrão de projeto que envolve mover o estado compartilhado entre componentes para um ancestral comum, a fim de sincronizar e compartilhar dados entre esses componentes.
+
+Quando vários componentes precisam compartilhar e atualizar o mesmo estado, elevar o estado é uma abordagem útil. Em vez de manter o estado separado em cada componente, o estado é movido para um componente superior, que se torna responsável por gerenciar e distribuir os dados para os componentes filhos.
+
+Vamos considerar um exemplo para entender melhor. Suponha que temos um aplicativo de lista de tarefas com um componente "Tarefa" que exibe uma tarefa individual e um componente "ListaTarefas" que gerencia a lista de tarefas completa.
+
+Inicialmente, cada tarefa individual pode ser marcada como concluída ou não. No entanto, também queremos exibir um contador que mostre o número total de tarefas concluídas em toda a lista.
+
+A solução é elevar o estado para o componente "ListaTarefas". O componente "Tarefa" receberá a informação se está concluída ou não por meio das props e notificará o componente pai quando uma tarefa for marcada como concluída.
+
+O componente "ListaTarefas" terá a responsabilidade de manter o estado completo da lista de tarefas e o contador de tarefas concluídas. Ele passará as props para cada componente "Tarefa" individualmente e receberá notificações de volta quando uma tarefa for marcada como concluída.
+
+Esse padrão de elevação de estado permite que o componente "ListaTarefas" atualize o estado geral e propague as mudanças para os componentes "Tarefa" filhos. Assim, o contador de tarefas concluídas é atualizado sempre que uma tarefa é marcada como concluída em qualquer componente "Tarefa".
+
+A elevação de estado é uma abordagem poderosa para compartilhar dados e manter a consistência entre componentes no React. Isso ajuda a evitar a duplicação de estado, facilita o gerenciamento centralizado dos dados e permite que os componentes sejam atualizados em resposta a mudanças no estado compartilhado.
 
 ## Exercícios
+Para realizar os exercícios crie um novo projeto em react utilizando Vite e TypeScript.
+  
 1) Crie um componente chamado "ButtonCounter" que exiba um botão e um contador. Cada vez que o botão for clicado o contador deve ser incrementado em 1.
+  
+2) Crie um componente chamado "Counter" que tenha um botão de incremento e um botão de decremento. Quando o contador atingir um valor de 10, exiba uma mensagem de "Limite alcançado".
 
-2) Crie um componente chamado "Toggle" que exiba um botão "On" e "Off". Ao clicar no botão, o texto do botão deve alternar entre "On" e "Off".
+3) Crie um componente chamado "Toggle" que exiba um botão "On" e "Off". Ao clicar no botão, o texto do botão deve alternar entre "On" e "Off".
 
-3) Crie um componente chamado "Timer" que exiba um cronômetro. O cronômetro deve iniciar em 00:00 e ir incrementando a cada segundo.
+4) Crie um componente chamado "Timer" que exiba um cronômetro. O cronômetro deve iniciar em 00:00 e ir incrementando a cada segundo.
 
-4) Crie um componente chamado "ColorPicker" que permita ao usuário selecionar uma cor de uma paleta de cores. Ao selecionar uma cor, a cor de fundo do componente deve ser atualizada. 
+5) Crie um componente chamado "ColorPicker" que permita ao usuário selecionar uma cor de uma paleta de cores. Ao selecionar uma cor, a cor de fundo do componente deve ser atualizada. 
+  
+6) Crie um componente chamada "UserCard" que receba as props "name", "email", "phone", "photo" e "description" e exiba as informações na tela. As propriedades "description" e "image" devem ser opcionais.
+  
+7) Crie um componente chamado "UserList" que renderiza uma lista de usuários utilizando o componente "UserCard" criado no exemplo anterior. Deve ser possível remover usuários da lista.
+  
+8) Crie um componente chamado "Modal" que envolva seu conteúdo com uma camada escura de fundo e um contêiner centralizado. O modal deve possuir a propriedade "title".
+  
+9) Crie um componente chamado "CommentSection" que receba um array de objetos com as props "author" e "text". Renderize uma seção de comentários exibindo o autor e o texto de cada comentário.
+  
+10) Crie um componente chamado "Login" que tenha um formulário com campos de email e senha. Renderize uma mensagem de "Login efetuado com sucesso" quando o usuário preencher corretamente os campos e clicar em um botão de "Entrar".
+  
+11) Crie um componente chamado "ItemList" que receba um array de itens como propriedade "items". Renderize uma lista dos itens, mas exiba a palavra "Esgotado" ao lado de cada item se ele estiver com estoque igual a zero.
 
 ## Desafios
 
